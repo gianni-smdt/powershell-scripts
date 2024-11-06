@@ -52,3 +52,40 @@ To run these scripts, you will need:
     ```powershell
     .\Test-Script\Test-Script.ps1
     ```
+## Usage
+
+Each script comes with documentation and examples within the file itself. Below is a general overview:
+
+- **Running a Script**: Navigate to the script's directory and execute:
+
+    ```powershell
+    .\ScriptName.ps1 
+    ```
+
+- **Common Parameters**: Some script could include parameters for flexibility. For instance:
+
+    ```powershell
+    .\ScriptName.ps1 -Parameter1 Value1 -Parameter2 Value2
+    ```
+
+- **Scheduled Tasks**: To automate, use Task Scheduler or cron jobs (for PowerShell Core on Linux) to run these scripts periodically.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/NewFeature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/NewFeature`).
+5. Open a Pull Request.
+
+## License
+
+Distributed under the GPL 3.0 License. See `LICENSE` file for more details.
+
+## Contact
+
+Maintainer: [Gianni Schmidt](mailto:"".com)
+
+For issues or suggestions, please open an issue in this repository or reach out directly.
