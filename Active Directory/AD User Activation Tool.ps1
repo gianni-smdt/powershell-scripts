@@ -99,7 +99,7 @@ $buttonClear.Add_Click({
     $buttonUnlock.Enabled = $false
 })
 
-#Label for the status box
+#Label for the status 
 $labelStatus = New-Object System.Windows.Forms.Label
 $labelStatus.Text = "Status:"
 $labelStatus.Location = New-Object System.Drawing.Point(10, 100)
@@ -113,7 +113,7 @@ $textBoxStatus.Size = New-Object System.Drawing.Size(230, 20)
 $textBoxStatus.Enabled = $false
 $form.Controls.Add($textBoxStatus)
 
-#Label for the description box
+#Label for the description 
 $labelDescription = New-Object System.Windows.Forms.Label
 $labelDescription.Text = "Description:"
 $labelDescription.Location = New-Object System.Drawing.Point(10, 70)
@@ -127,7 +127,7 @@ $textBoxDescription.Size = New-Object System.Drawing.Size(230, 20)
 $textBoxDescription.Enabled = $false
 $form.Controls.Add($textBoxDescription)
 
-#Label for the name
+#Label for the name 
 $labelName = New-Object System.Windows.Forms.Label
 $labelName.Text = "Name:"
 $labelName.Location = New-Object System.Drawing.Point(10, 40)
