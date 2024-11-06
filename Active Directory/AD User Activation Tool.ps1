@@ -88,13 +88,13 @@ $buttonClear.Add_Click({
 $labelStatus = New-Object System.Windows.Forms.Label
 $labelStatus.Text = "Status:"
 $labelStatus.Location = New-Object System.Drawing.Point(10, 100)
-$labelStatus.Size = New-Object System.Drawing.Size(90, 20)
+$labelStatus.Size = New-Object System.Drawing.Size(70, 20)
 $form.Controls.Add($labelStatus)
 
 #TextBox to display the current status
 $textBoxStatus = New-Object System.Windows.Forms.TextBox
-$textBoxStatus.Location = New-Object System.Drawing.Point(110, 100)
-$textBoxStatus.Size = New-Object System.Drawing.Size(200, 20)
+$textBoxStatus.Location = New-Object System.Drawing.Point(80, 100)
+$textBoxStatus.Size = New-Object System.Drawing.Size(230, 20)
 $textBoxStatus.Enabled = $false
 $form.Controls.Add($textBoxStatus)
 
@@ -102,13 +102,13 @@ $form.Controls.Add($textBoxStatus)
 $labelDescription = New-Object System.Windows.Forms.Label
 $labelDescription.Text = "Description:"
 $labelDescription.Location = New-Object System.Drawing.Point(10, 70)
-$labelDescription.Size = New-Object System.Drawing.Size(90, 20)
+$labelDescription.Size = New-Object System.Drawing.Size(70, 20)
 $form.Controls.Add($labelDescription)
 
 #TextBox to display the description
 $textBoxDescription = New-Object System.Windows.Forms.TextBox
-$textBoxDescription.Location = New-Object System.Drawing.Point(110, 70)
-$textBoxDescription.Size = New-Object System.Drawing.Size(200, 20)
+$textBoxDescription.Location = New-Object System.Drawing.Point(80, 70)
+$textBoxDescription.Size = New-Object System.Drawing.Size(230, 20)
 $textBoxDescription.Enabled = $false
 $form.Controls.Add($textBoxDescription)
 
@@ -116,13 +116,13 @@ $form.Controls.Add($textBoxDescription)
 $labelName = New-Object System.Windows.Forms.Label
 $labelName.Text = "Name:"
 $labelName.Location = New-Object System.Drawing.Point(10, 40)
-$labelName.Size = New-Object System.Drawing.Size(100, 20)
+$labelName.Size = New-Object System.Drawing.Size(70, 20)
 $form.Controls.Add($labelName)
 
 #TextBox to display the name
 $textBoxName = New-Object System.Windows.Forms.TextBox
-$textBoxName.Location = New-Object System.Drawing.Point(110, 40)
-$textBoxName.Size = New-Object System.Drawing.Size(200, 20)
+$textBoxName.Location = New-Object System.Drawing.Point(80, 40)
+$textBoxName.Size = New-Object System.Drawing.Size(230, 20)
 $textBoxName.Enabled = $false
 $form.Controls.Add($textBoxName)
 
