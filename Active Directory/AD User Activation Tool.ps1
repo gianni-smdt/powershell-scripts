@@ -78,7 +78,7 @@ $buttonSearch.Add_Click({
             return
         }
     } else {
-        [System.Windows.Forms.MessageBox]::Show("Please enter a user name before proceeding.", "AD User Activation Tool", 
+        [System.Windows.Forms.MessageBox]::Show("Please enter an user name before proceeding.", "AD User Activation Tool", 
         [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
         return
     }
