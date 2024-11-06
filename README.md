@@ -1,6 +1,6 @@
 # PowerShell Administration Scripts
 
-A collection of PowerShell scripts designed to simplify and automate administrative tasks. These scripts are tailored for IT administrators and system engineers, enabling them to manage, configure, and monitor systems more efficiently.
+A collection of simple PowerShell scripts designed to simplify and automate administrative tasks. These scripts are tailored for IT administrators, enabling them to manage, configure, and monitor systems more efficiently.
 
 ## Table of Contents
 
@@ -36,5 +36,27 @@ To run these scripts, you will need:
 - Administrative privileges, as some scripts require elevated permissions.
 - (Optional) Modules like `ActiveDirectory` for specific tasks, which can be installed via:
 
-```powershell
-Install-Module -Name ActiveDirectory
+  ```powershell
+  Install-Module -Name ActiveDirectory
+  ```
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+    ```bash
+    git clone https://github.com/gsmdt01/PowerShell.git
+    cd PowerShell
+    ```
+
+2. Ensure that execution policies are set to allow the running of scripts:
+
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+3. Run a test script to verify functionality:
+
+    ```powershell
+    .\Test-Script\Test-Script.ps1
+    ```
