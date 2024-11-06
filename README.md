@@ -5,7 +5,6 @@ A collection of simple PowerShell scripts designed to simplify and automate admi
 ## Table of Contents
 
 - [About the Project](#about-the-project)
-- [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -16,15 +15,8 @@ A collection of simple PowerShell scripts designed to simplify and automate admi
 
 ## About the Project
 
-This repository contains a set of PowerShell scripts aimed at helping administrators streamline routine tasks in Windows environments. These scripts handle tasks like user management, system configuration, process monitoring, and logging. With a focus on ease-of-use and flexibility, they can be applied in various IT and DevOps workflows.
-
-## Features
-
-- **User Management**: Create, modify, and delete user accounts.
-- **System Monitoring**: Monitor CPU, memory, and disk usage.
-- **Automated Backups**: Schedule and manage system and file backups.
-- **Security Configurations**: Apply and monitor essential security policies.
-- **Logging & Reporting**: Generate logs and reports for key administrative activities.
+This repository contains a set of PowerShell scripts aimed at helping administrators streamline routine tasks in Windows environments. 
+With a focus on ease-of-use and flexibility, they can be applied in various IT workflows.
 
 ## Getting Started
 
