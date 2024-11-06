@@ -134,11 +134,12 @@ $buttonUnlock.Size = New-Object System.Drawing.Size(80, 79)
 $buttonUnlock.Enabled = $false
 $form.Controls.Add($buttonUnlock) 
 $buttonUnlock.Add_Click({
-    $computerName = $textBoxSearch.Text
+    $userName = $textBoxSearch.Text
     try {
         #Enable the user account
-        Set-ADComputer -Identity $computerName -Enabled $true
-        [System.Windows.Forms.MessageBox]::Show("The user account '$computerName' was successfully enabled.", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        Enable-ADAccount -Identity $userName
+        $buttonUnlock.Enabled = $false
+        [System.Windows.Forms.MessageBox]::Show("The user account '$userName' was successfully enabled.", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
     } catch {
         [System.Windows.Forms.MessageBox]::Show("An error occurred while enabling the user account:`n`n$_", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
         return
