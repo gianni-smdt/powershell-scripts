@@ -1,16 +1,3 @@
-<#
-.SYNOPSIS
-    Ruft die Informationen von Computern aus dem AD ab und ermöglicht die Aktivierung des angegebenen PCs.
-
-.DESCRIPTION
-    Dieses Skript nimmt einen Computernamen (z.B. MGNPCxxxx) entgegen und zeigt das installierte Betriebssystem sowie die im AD 
-    angegebeneBeschreibung des Geräts an. Außerdem zeigt es an, ob der eingegebene Computer im AD aktiviert oder deaktiviert ist. 
-    Mithilfe eines Buttons besteht die Möglichkeit, den Computer im AD zu aktivieren.
-
-.NOTES
-    2024, Gianni Schmidt
-#>
-
 #Import necessary libraries
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
