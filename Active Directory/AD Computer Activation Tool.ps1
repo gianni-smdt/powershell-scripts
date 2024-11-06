@@ -16,7 +16,6 @@ Add-Type -TypeDefinition @"
         public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
     }
 "@
-
 $HWND = $([System.Diagnostics.Process]::GetCurrentProcess().MainWindowHandle)
 [void][User]::ShowWindow($HWND, 0)  
 
@@ -26,7 +25,7 @@ $form.Text = "AD Computer Activation Tool"
 $form.Size = New-Object System.Drawing.Size(427,170)
 $form.StartPosition = "CenterScreen"
 
-#TextBox to specify a computer (computer name)
+#TextBox to specify a computer by its name
 $textBoxSearch = New-Object System.Windows.Forms.TextBox
 $textBoxSearch.Location = New-Object System.Drawing.Point(10,10)
 $textBoxSearch.Size = New-Object System.Drawing.Size(170,20)
