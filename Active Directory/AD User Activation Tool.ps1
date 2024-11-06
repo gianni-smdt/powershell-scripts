@@ -73,11 +73,13 @@ $buttonSearch.Add_Click({
                 $buttonUnlock.Enabled = $true
             }
         } else {
-            [System.Windows.Forms.MessageBox]::Show("The user you entered could not be found.`n`nPlease make sure that the user name is correct.", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+            [System.Windows.Forms.MessageBox]::Show("The user you entered could not be found.`n`nPlease make sure that the user name is correct.", 
+            "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
             return
         }
     } else {
-        [System.Windows.Forms.MessageBox]::Show("Please enter a user name before proceeding.", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        [System.Windows.Forms.MessageBox]::Show("Please enter a user name before proceeding.", "AD User Activation Tool", 
+        [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
         return
     }
 })
@@ -152,9 +154,11 @@ $buttonUnlock.Add_Click({
         #Enable the user account
         Enable-ADAccount -Identity $userName
         $buttonUnlock.Enabled = $false
-        [System.Windows.Forms.MessageBox]::Show("The user account '$userName' was successfully enabled.", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        [System.Windows.Forms.MessageBox]::Show("The user account '$userName' was successfully enabled.", "AD User Activation Tool", 
+        [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
     } catch {
-        [System.Windows.Forms.MessageBox]::Show("An error occurred while enabling the user account:`n`n$_", "AD User Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+        [System.Windows.Forms.MessageBox]::Show("An error occurred while enabling the user account:`n`n$_", "AD User Activation Tool", 
+        [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
         return
     }
 })
