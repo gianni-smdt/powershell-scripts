@@ -1,6 +1,6 @@
 # PowerShell Administration Scripts
 
-A collection of simple PowerShell scripts designed for administrative tasks. These scripts are tailored for IT administrators, enabling them to manage, configure, and monitor systems more efficiently.
+A collection of PowerShell scripts designed for administrative tasks. These scripts are tailored for IT administrators, enabling them to manage, configure, and monitor systems more efficiently.
 
 ## Table of Contents
 
