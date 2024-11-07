@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    Retrieves information of a specified user from the AD and enables account activation.
+    Retrieves information of a specified user from Active Directory (AD) and enables account activation.
     
 .DESCRIPTION
-    This script accepts a username (SamAccountName) and displays the name (first name and surname) 
-    as well as the description of the user. It also shows whether the specified user is active or 
-    disabled in AD. If the user is disabled, a button allows the activation of the user.
+    This script accepts a username (SamAccountName) and displays the name (first name and surname) as well 
+    as the description of the user. It also shows whether the specified user is active or disabled in AD. 
+    If the user is disabled, a button allows the activation of the user.
 
 .NOTES
     2024, Gianni Schmidt
