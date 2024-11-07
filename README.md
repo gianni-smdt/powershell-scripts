@@ -46,12 +46,6 @@ To run these scripts, you will need:
     ```powershell
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
-
-3. Run a test script to verify functionality:
-
-    ```powershell
-    .\Test-Script\Test-Script.ps1
-    ```
 ## Usage
 
 Each script comes with documentation and examples within the file itself. Below is a general overview:
