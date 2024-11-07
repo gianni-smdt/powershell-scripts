@@ -1,6 +1,6 @@
 # PowerShell Administration Scripts
 
-A collection of simple PowerShell scripts designed to simplify and automate administrative tasks. These scripts are tailored for IT administrators, enabling them to manage, configure, and monitor systems more efficiently.
+A collection of simple PowerShell scripts designed for administrative tasks. These scripts are tailored for IT administrators, enabling them to manage, configure, and monitor systems more efficiently.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ A collection of simple PowerShell scripts designed to simplify and automate admi
 
 ## About the Project
 
-This repository contains a set of PowerShell scripts aimed at helping administrators streamline routine tasks in Windows environments. 
+This repository contains a set of simple PowerShell scripts aimed at helping administrators streamline routine tasks in Windows environments. 
 With a focus on ease-of-use and flexibility, they can be applied in various IT workflows.
 
 ## Getting Started
