@@ -56,19 +56,19 @@ To run these scripts, you will need:
 
 Each script comes with documentation and examples within the file itself. Below is a general overview:
 
-- **Running a Script**: Navigate to the script's directory and execute:
+- **Running a script**: Navigate to the script's directory and execute:
 
     ```powershell
     .\ScriptName.ps1 
     ```
 
-- **Common Parameters**: Some script could include parameters for flexibility. For instance:
+- **Running a script with parameters**: Some scripts could include parameters for flexibility. For instance:
 
     ```powershell
     .\ScriptName.ps1 -Parameter1 Value1 -Parameter2 Value2
     ```
 
-- **Scheduled Tasks**: To automate, use Task Scheduler or cron jobs (for PowerShell Core on Linux) to run these scripts periodically.
+- **Scheduled tasks**: To automate, use Task Scheduler or cron jobs (for PowerShell Core on Linux) to run these scripts periodically.
 
 ## Contributing
 
