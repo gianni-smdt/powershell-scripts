@@ -80,6 +80,6 @@ Distributed under the GPL-3.0 License. See `LICENSE` file for more details.
 
 ## Contact
 
-Maintainer: [Gianni Schmidt](mailto:"".com)
+Maintainer: [Gianni Schmidt](mailto:giannischmidt2001@gmail.com)
 
 For issues or suggestions, please open an issue in this repository or reach out directly.
