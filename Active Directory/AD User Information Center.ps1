@@ -468,7 +468,8 @@ $buttonSearch.Add_Click({
     $users = Get-ADUser -Filter {GivenName -like $searchValue -or Surname -like $searchValue -or SamAccountName -like $searchValue} -SearchBase $ouDN -Properties *
     
     if ($users.Count -eq 0) {
-        [System.Windows.Forms.MessageBox]::Show("No users could be found that match your input.`n`nPlease make sure that the name is entered correctly.", "AD User Information Center", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        [System.Windows.Forms.MessageBox]::Show("No users could be found that match your input.`n`nPlease make sure that the name is entered correctly.", 
+        "AD User Information Center", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
     } else {
         #Display found users in DataGridView
         foreach ($user in $users) {
@@ -623,12 +624,14 @@ $buttonSave.Add_Click({
         #Save all changes
         if ($replaceProperties.Count -gt 0) {
             Set-ADUser -Identity $selectedUserName -Replace $replaceProperties
-            [System.Windows.MessageBox]::Show("All changes have been saved.", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
+            [System.Windows.MessageBox]::Show("All changes have been saved.", "AD User Information Center", 
+            [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
         }
     } catch {
         #Message if an error occurs
         $errorMessage = $_.Exception.Message
-        [System.Windows.MessageBox]::Show("An error occurred while updating the user information:`n`n$errorMessage", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
+        [System.Windows.MessageBox]::Show("An error occurred while updating the user information:`n`n$errorMessage", 
+        "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
     }
 })
 
@@ -693,10 +696,12 @@ $buttonUpdatePassSett.Add_Click({
                 Set-ADUser -Identity $selectedUserName -CannotChangePassword $false
             }
 
-            [System.Windows.MessageBox]::Show("The account settings have been successfully applied.", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
+            [System.Windows.MessageBox]::Show("The account settings have been successfully applied.", "AD User Information Center", 
+            [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
         } catch {
             $errorMessage = $_.Exception.Message
-            [System.Windows.MessageBox]::Show("An error occurred while updating the account settings:`n`n$errorMessage", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
+            [System.Windows.MessageBox]::Show("An error occurred while updating the account settings:`n`n$errorMessage", "AD User Information Center", 
+            [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
         }
     }
 })
@@ -708,11 +713,13 @@ $buttonResetPass.Add_Click({
         try{
             Set-ADAccountPassword -Identity $selectedUserName -NewPassword (ConvertTo-SecureString -AsPlainText $newPassword -Force) -Reset
             Set-ADUser -Identity $selectedUserName -ChangePasswordAtLogon $True
-            [System.Windows.MessageBox]::Show("The password has been successfully set.", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
+            [System.Windows.MessageBox]::Show("The password has been successfully set.", "AD User Information Center", 
+            [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Information)
             $textBoxInsertNewPass.Clear()
         } catch{
             $errorMessage = $_.Exception.Message
-            [System.Windows.MessageBox]::Show("An error occurred while setting the password:`n`n$errorMessage", "AD User Information Center", [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
+            [System.Windows.MessageBox]::Show("An error occurred while setting the password:`n`n$errorMessage", "AD User Information Center", 
+            [System.Windows.MessageBoxButton]::OK, [System.Windows.MessageBoxImage]::Error)
         }
 })
 
