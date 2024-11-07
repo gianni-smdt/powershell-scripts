@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    Retrieves information of a specified computer from the AD and enables account activation.
+    Retrieves information of a specified computer from Active Directory (AD) and enables account activation.
     
 .DESCRIPTION
-    This script accepts a computer name and displays the operating system (OS) as well as the 
-    description of the computer. It also shows whether the specified computer is active or 
-    disabled in AD. If the computer is disabled, a button allows its activation of the computer.
+    This script accepts a computer name and displays the operating system (OS) as well as the description of 
+    the computer. It also shows whether the specified computer is active or disabled in AD. If the computer is 
+    disabled, a button allows its activation of the computer.
 
 .NOTES
     2024, Gianni Schmidt
