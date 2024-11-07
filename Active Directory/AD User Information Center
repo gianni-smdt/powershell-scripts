@@ -5,8 +5,8 @@
 .DESCRIPTION
     This script accepts a name (given name, last name or SamAccountName) and displays all people with that name in the 
     table (DataGridView). From this list, a user can then be selected and their user information will be displayed in 
-    the text boxes below. These can be edited (with a few exceptions) and saved if necessary. Additionally, a temporary 
-    password for the selected user can be set and account settings can be applied.
+    the text boxes below. These can be edited (with a few exceptions) if necessary. Additionally, a temporary password 
+    for the selected user can be set and account settings can be applied.
 
 .NOTES
     To select a user, click on the empty checkbox next to the corresponding given name.
@@ -321,11 +321,11 @@ $form.Controls.Add($textBoxLocation)
 #Button - "Save Changes"
 $buttonSave = New-Object System.Windows.forms.Button
 $buttonSave.Text = "Save Changes"
-$buttonSave.Location = New-Object System.Drawing.Point(170, 690)
+$buttonSave.Location = New-Object System.Drawing.Point(140, 690)
 $buttonSave.Size = New-Object System.Drawing.Size(100, 20)
 $form.Controls.Add($buttonSave)
 
-<#------------------------------------------------------------------Password/Account Information (GUI)------------------------------------------------------------------#>
+<#------------------------------------------------------------------Password/Account Information (GUI)-------------------------------------------------------------------#>
 <#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------#>
 
 #Header - "Password/Account Information"
@@ -421,7 +421,7 @@ $form.Controls.Add($dtpLastLogin)
 #Button - "Save Password Settings"
 $buttonUpdatePassSett = New-Object System.Windows.forms.Button
 $buttonUpdatePassSett.Text = "Save Password Settings"
-$buttonUpdatePassSett.Location = New-Object System.Drawing.Point(465, 430)
+$buttonUpdatePassSett.Location = New-Object System.Drawing.Point(460, 430)
 $buttonUpdatePassSett.Size = New-Object System.Drawing.Size(200, 20)
 $form.Controls.Add($buttonUpdatePassSett)
 
@@ -446,10 +446,10 @@ $textBoxInsertNewPass.Size = New-Object System.Drawing.Size(350, 20)
 $textBoxInsertNewPass.ReadOnly = $true
 $form.Controls.Add($textBoxInsertNewPass)
 
-#Button - "Save Password"
+#Button - "Set Temporary Password"
 $buttonResetPass = New-Object System.Windows.forms.Button
 $buttonResetPass.Text = "Set Temporary Password"
-$buttonResetPass.Location = New-Object System.Drawing.Point(468, 570)
+$buttonResetPass.Location = New-Object System.Drawing.Point(470, 570)
 $buttonResetPass.Size = New-Object System.Drawing.Size(170, 20)
 $form.Controls.Add($buttonResetPass)
 
