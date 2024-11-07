@@ -88,6 +88,7 @@ $labelUserData = New-Object System.Windows.Forms.Label
 $labelUserData.Text = "User Information"
 $labelUserData.Location = New-Object System.Drawing.Point(20, 180)
 $labelUserData.Size = New-Object System.Drawing.Size(120, 20)
+$labelUserData.Font = New-Object System.Drawing.Font($labelUserData.Font, [System.Drawing.FontStyle]::Underline)
 $form.Controls.Add($labelUserData)
 
 #Label - "Surname"
@@ -333,6 +334,7 @@ $labelPasAcc = New-Object System.Windows.Forms.Label
 $labelPasAcc.Text = "Password / Account Information"
 $labelPasAcc.Location = New-Object System.Drawing.Point(370, 180)
 $labelPasAcc.Size = New-Object System.Drawing.Size(180, 20)
+$labelPasAcc.Font = New-Object System.Drawing.Font($labelUserData.Font, [System.Drawing.FontStyle]::Underline)
 $form.Controls.Add($labelPasAcc)
 
 #CheckBox - "Unlock AD Account"
