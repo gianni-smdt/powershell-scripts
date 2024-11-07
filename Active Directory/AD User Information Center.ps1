@@ -3,10 +3,10 @@
     Fetches data from AD users and allows for editing. Additionally, accounts settings and password changes can be made.
 
 .DESCRIPTION
-    This script accepts a name (given name, last name or SamAccountName) and displays all people with that name in the 
-    table (DataGridView). From this list, a user can then be selected and their user information will be displayed in 
-    the text boxes below. These can be edited (with a few exceptions) if necessary. Additionally, a temporary password 
-    for the selected user can be set and account settings can be applied.
+    This script accepts a name (given name, surname or SamAccountName) and displays all users with that name in the 
+    table bellow. From this list, a user can then be selected and their user information will be displayed in the text 
+    boxes below. These can be edited (with a few exceptions) if necessary. Additionally, a temporary password for the 
+    selected user can be set and account settings can be applied.
 
 .NOTES
     To select a user, click on the empty checkbox next to the corresponding given name.
