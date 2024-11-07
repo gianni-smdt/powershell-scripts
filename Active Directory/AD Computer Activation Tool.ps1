@@ -73,11 +73,13 @@ $buttonSearch.Add_Click({
                 $buttonUnlock.Enabled = $true
             }
         } else {
-            [System.Windows.Forms.MessageBox]::Show("The computer you entered could not be found.`n`nPlease make sure that the computer name is correct.", "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+            [System.Windows.Forms.MessageBox]::Show("The computer you entered could not be found.`n`nPlease make sure that the computer name is correct.", 
+            "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
             return
         }
     } else {
-        [System.Windows.Forms.MessageBox]::Show("Please enter a computer name before proceeding.", "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        [System.Windows.Forms.MessageBox]::Show("Please enter a computer name before proceeding.", "AD Computer Activation Tool", 
+        [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
         return
     }
 })
@@ -151,9 +153,11 @@ $buttonUnlock.Add_Click({
     try {
         #Enable the computer account
         Set-ADComputer -Identity $computerName -Enabled $true
-        [System.Windows.Forms.MessageBox]::Show("The computer account '$computerName' was successfully enabled.", "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+        [System.Windows.Forms.MessageBox]::Show("The computer account '$computerName' was successfully enabled.", 
+        "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
     } catch {
-        [System.Windows.Forms.MessageBox]::Show("An error occurred while enabling the computer account:`n`n$_", "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+        [System.Windows.Forms.MessageBox]::Show("An error occurred while enabling the computer account:`n`n$_", 
+        "AD Computer Activation Tool", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
         return
     }
 })
