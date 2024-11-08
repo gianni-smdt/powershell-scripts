@@ -3,8 +3,8 @@
     Resets the Citrix Workspace.
 
 .DESCRIPTION
-    This script resets the Citrix Workspace to its default configuration. 
-    The script includes simple graphical interaction elements. 
+    This simples script resets the Citrix Workspace to its default configuration. 
+    The script includes basic graphical interaction elements. 
 
 .NOTES
     2024, Gianni Schmidt
