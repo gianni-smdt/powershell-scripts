@@ -206,7 +206,7 @@ $form.Controls.Add($textBoxMobile)
 
 #Label - "Form of address"
 $labelSalute = New-Object System.Windows.Forms.Label
-$labelSalute.Text = "Form of address"
+$labelSalute.Text = "Form of Address"
 $labelSalute.Location = New-Object System.Drawing.Point(10, 440)
 $labelSalute.Size = New-Object System.Drawing.Size(100, 20)
 $labelSalute.TextAlign = [System.Drawing.ContentAlignment]::MiddleRight
