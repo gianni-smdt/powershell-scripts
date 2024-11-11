@@ -38,9 +38,11 @@ To run these scripts, you will need:
 
     ```bash
     git clone https://github.com/gsmdt42/PowerShell.git
+    ```
+    ```bash
     cd PowerShell
     ```
-
+    
 2. Ensure that execution policies are set to allow the running of scripts:
 
     ```powershell
