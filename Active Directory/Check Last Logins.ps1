@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Retrieves users from specific OUs and displays information regarding their login.
+
+.DESCRIPTION
+    This script retrieves all AD users within one or more OUs and displays their name, their last login date, 
+    and their last password change date. Additionally, it marks certain users to indicate whether a password change is due.
+
+.NOTES
+    2024, Gianni Schmidt
+#>
+
 #Import all necessary libraries
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
@@ -28,7 +40,7 @@ $dataGridView.Columns.Add("User_must_be_reset", "Must be reset")
 #Center the content of the column "User_must_be_reset"
 $dataGridView.Columns["User_must_be_reset"].DefaultCellStyle.Alignment = 'MiddleCenter'
 
-#Retrieve and merge users from the OUs
+#Retrieve and merge users from the OU(s)
 $ouDN1 = "OU=Enter,DC=your,DC=OU,DC=here"
 $ouDN2 = "OU=Enter,DC=your,DC=OU,DC=here"
 $usersInOU1 = Get-ADUser -Filter * -SearchBase $ouDN1 -Properties LastLogonDate, PasswordLastSet
