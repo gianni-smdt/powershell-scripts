@@ -7,7 +7,7 @@ Import-Module ActiveDirectory
 
 #Create the main window
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Review - Last Logins"
+$form.Text = "Check Last Logins"
 $form.Size = New-Object System.Drawing.Size(715, 570)
 $form.StartPosition = "CenterScreen"
 
