@@ -22,7 +22,7 @@ $HWND = $([System.Diagnostics.Process]::GetCurrentProcess().MainWindowHandle)
 #Create the main window
 $form = New-Object System.Windows.Forms.Form
 $form.Text = "Retrieve Computer DN"
-$form.Size = New-Object System.Drawing.Size(620,110)
+$form.Size = New-Object System.Drawing.Size(620,130)
 $form.StartPosition = "CenterScreen"
 
 #Label for the computer name
@@ -71,6 +71,7 @@ $form.Controls.Add($labelDN)
 $textBoxDN = New-Object System.Windows.Forms.TextBox
 $textBoxDN.Location = New-Object System.Drawing.Point(40,40)
 $textBoxDN.Size = New-Object System.Drawing.Size(550,40)
+$textBoxDN.Multiline = $true
 $textBoxDN.Enabled = $false
 $form.Controls.Add($textBoxDN)
 
