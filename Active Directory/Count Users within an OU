@@ -1,0 +1,8 @@
+#Set DN 
+$ouDN = "OU=DN,DC=of,DC=your,DC=desired,DC=OU"
+
+#Get list of SamAccountNames from AD
+$adUsers = Get-ADUser -Filter * -SearchBase $ouDN -Property SamAccountName | Select-Object -ExpandProperty SamAccountName
+
+#Display number of AD users in console
+Write-Host $adUsers.Count
