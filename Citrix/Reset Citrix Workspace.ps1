@@ -3,7 +3,7 @@
     Resets the Citrix Workspace.
 
 .DESCRIPTION
-    This simples script resets the Citrix Workspace to its default configuration. 
+    That simple script resets the Citrix Workspace to its default configuration. 
     The script includes basic graphical interaction elements. 
 
 .NOTES
