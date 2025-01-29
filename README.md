@@ -37,10 +37,10 @@ To run these scripts, you will need:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/gianni-smdt/PowerShell.git
+    git clone https://github.com/gianni-smdt/powershell-scripts.git
     ```
     ```bash
-    cd PowerShell
+    cd powershell-scripts
     ```
     
 2. Ensure that execution policies are set to allow the running of scripts:
