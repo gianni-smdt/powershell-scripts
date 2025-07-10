@@ -78,7 +78,7 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-Distributed under the GPL-3.0 License. See `LICENSE` file for more details.
+Distributed under the MIT License. See `LICENSE` file for more details.
 
 ## Contact
 
